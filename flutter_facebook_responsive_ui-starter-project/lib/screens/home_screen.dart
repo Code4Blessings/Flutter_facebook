@@ -39,8 +39,10 @@ class HomeScreen extends StatelessWidget {
               ],
           ),
           SliverToBoxAdapter(
-            child: CreatePostContainer(currentUser: currentUser),
-            
+            child: CreatePostContainer(currentUser: currentUser),  
+          ),
+          SliverToBoxAdapter(
+            child: Rooms(),
           )
         ],
       ),
